@@ -55,5 +55,5 @@ Find the source code here: **[GitHub Repository](https://github.com/RomeesaKamal
 
 ## 📩 Contact
 For any questions or feedback, feel free to reach out:
-- 📧 Email: **[your email]**
-- 💼 LinkedIn: **[Your LinkedIn Profile](https://www.linkedin.com/in/romeesa-kamal-7864b8342/)**
+- 📧 Email: **[Email](romeesakamal2005@gmail.com)**
+- 💼 LinkedIn: **[Linkedin Profile](https://www.linkedin.com/in/romeesa-kamal-7864b8342/)**
