@@ -38,7 +38,7 @@ This project is an **E-Commerce Product Page** built using **React**. It dynamic
    ```
 
 ## 🌐 Live Demo
-Check out the live version here: **[Live Demo](https://your-live-demo-link.com)**
+Check out the live version here: **[Live Demo](rk-eazybuy-website.netlify.app)**
 
 ## 🎯 Usage
 - 🏠 The homepage displays a list of **products fetched from the API**.
@@ -51,9 +51,9 @@ Check out the live version here: **[Live Demo](https://your-live-demo-link.com)*
 - 🎨 Improve **UI/UX** with animations and better styling
 
 ## 📌 Repository
-Find the source code here: **[GitHub Repository](https://github.com/yourusername/ecommerce-product-page)**
+Find the source code here: **[GitHub Repository](https://github.com/RomeesaKamal/E-commerce-website)**
 
 ## 📩 Contact
 For any questions or feedback, feel free to reach out:
 - 📧 Email: **[your email]**
-- 💼 LinkedIn: **[Your LinkedIn Profile](https://linkedin.com/in/yourprofile)**
+- 💼 LinkedIn: **[Your LinkedIn Profile](https://www.linkedin.com/in/romeesa-kamal-7864b8342/)**
