@@ -43,7 +43,7 @@ export default function HamburgerIcon() {
     <nav className="dark:bg-gray-900 bg-slate-200 shadow-2xl text-white relative">
       <div className="flex justify-between md:p-0 p-4 items-center max-w-6xl mx-auto">
         {/* ✅ Logo (Always Visible) */}
-        <h4 className="text-3xl font-mono text-white text-slate-900 font-extrabold flex md:hidden">
+        <h4 className="text-3xl font-mono text-slate-900 font-extrabold flex md:hidden">
           <ShoppingBasket size={32} className="mr-3 dark:text-[#FB9237] text-red-900" />
           Eazy<span className="dark:text-orange-400 text-red-900" >Buy</span>
         </h4>
