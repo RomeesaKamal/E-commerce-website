@@ -1,137 +1,3 @@
-
-// import React, { useState, useEffect } from "react";
-// import { Menu, X, ShoppingBasket } from "lucide-react";
-// import { useNavigate } from "react-router-dom";
-
-// export default function HamburgerIcon() {
-//   const [isOpen, setIsOpen] = useState(false);
-//   const navigate = useNavigate();
-
-//   // Categories list (without emojis)
-//   const categories = [
-//     "Smartphones",
-//     "Laptops",
-//     "Fragrances",
-//     "Skincare",
-//     "Groceries",
-//     "Home Decoration",
-//     "Furniture",
-//     "Tops",
-//     "Women's Dresses",
-//     "Women's Shoes",
-//     "Men's Shirts",
-//     "Men's Shoes",
-//     "Men's Watches",
-//     "Women's Watches",
-//     "Women's Bags",
-//     "Women's Jewellery",
-//     "Sunglasses",
-//     "Automotive",
-//     "Motorcycle",
-//     "Lighting",
-//   ];
-
-//   // Function to format category for URL
-//   const formatCategory = (category) => {
-//     return category.toLowerCase().replace(/\s+/g, "-");
-//   };
-
-//   // Prevent scrolling when menu is open
-//   useEffect(() => {
-//     if (isOpen) {
-//       document.body.classList.add("overflow-hidden");
-//     } else {
-//       document.body.classList.remove("overflow-hidden");
-//     }
-//   }, [isOpen]);
-
-//   return (
-//     <nav className="bg-gray-900 shadow-2xl text-white p-4 relative">
-//       <div className="flex justify-between items-center max-w-6xl mx-auto">
-//         {/* ✅ Logo (Always Visible) */}
-//         <h4 className="text-3xl font-mono font-extrabold flex">
-//           <ShoppingBasket size={32} className="mr-3 text-[#FB9237]" />
-//           Eazy<span className="text-orange-400">Buy</span>
-//         </h4>
-
-//         {/* ✅ Hamburger Button (Changes to Close Icon) */}
-//         <button
-//           className="block md:hidden text-white"
-//           onClick={() => setIsOpen(!isOpen)}
-//         >
-//           {isOpen ? <X size={32} /> : <Menu size={32} />}
-//         </button>
-//       </div>
-
-//       {/* ✅ Blur Background */}
-//       {isOpen && (
-//         <div
-//           className="fixed inset-0 bg-black bg-opacity-50 backdrop-blur-md z-40 transition-all"
-//           onClick={() => setIsOpen(false)}
-//         ></div>
-//       )}
-
-//       {/* ✅ Mobile Menu (80% Width) */}
-//       <div
-//         className={`fixed top-0 right-0 w-4/5 h-full bg-white dark:bg-slate-900 shadow-2xl p-6 z-50 transition-transform duration-300 ${
-//           isOpen ? "translate-x-0" : "translate-x-full "
-//         }`}
-//       >
-//         {/* ✅ Close Button inside Menu */}
-//         <div className="flex justify-between items-center">
-//           {/* ✅ Logo inside Menu */}
-//           <h4 className="text-2xl font-mono font-extrabold flex">
-//             <ShoppingBasket size={28} className="mr-2 text-[#FB9237]" />
-//             Eazy<span className="text-orange-400">Buy</span>
-//           </h4>
-
-//           <button className="text-gray-700 dark:text-white" onClick={() => setIsOpen(false)}>
-//             <X size={32} />
-//           </button>
-//         </div>
-
-//         {/* ✅ Profile Picture */}
-//         <div className="flex justify-center my-6">
-//           <a
-//             href="https://romeesakamal.github.io/RK-professional-portfolio/"
-//             target="_blank"
-//             rel="noreferrer"
-//           >
-//             <img
-//               src="/Assets/girl.jpg"
-//               alt="Profile"
-//               className="h-24 w-24 rounded-full border-4 dark:border-white border-slate-900 hover:border-red-900 dark:hover:border-[#00FF9C] transition-all shadow-lg"
-//             />
-//           </a>
-//         </div>
-
-//         {/* ✅ Category Heading */}
-//         <h3 className="text-center text-lg font-semibold text-gray-700 dark:text-gray-200 mb-4">
-//           ✨ Choose What Interests You ✨
-//         </h3>
-
-//         {/* ✅ Categories List */}
-//         <ul className="space-y-3 text-lg font-semibold mb-6">
-//           {categories.map((category, index) => (
-//             <li
-//               key={index}
-//               className="flex items-center justify-between p-3 dark:hover:text-[#00FF9C] hover:text-red-900 cursor-pointer rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-all"
-//               onClick={() => {
-//                 navigate(`/products?category=${formatCategory(category)}`);
-//                 setIsOpen(false); // Close menu on category click
-//               }}
-//             >
-//               <span>
-//                 {index + 1}. {category}
-//               </span>
-//             </li>
-//           ))}
-//         </ul>
-//       </div>
-//     </nav>
-//   );
-// }
-
 import React, { useState, useEffect } from "react";
 import { Menu, X, ShoppingBasket } from "lucide-react";
 import { useNavigate } from "react-router-dom";
@@ -208,9 +74,9 @@ export default function HamburgerIcon() {
         {/* ✅ Close Button inside Menu */}
         <div className="flex justify-between items-center">
           {/* ✅ Logo inside Menu */}
-          <h4 className="text-2xl text-slate-900 dark:text-white font-mono font-extrabold flex">
+          <h4 className="text-2xl font-mono font-extrabold flex">
             <ShoppingBasket size={28} className="mr-2 dark:text-[#FB9237] text-red-900" />
-            Eazy<span className="dark:text-orange-400 text-red-900">Buy</span>
+            <span className=" text-slate-900 dark:text-white"></span>Eazy<span className="dark:text-orange-400 text-red-900">Buy</span>
           </h4>
 
           <button className="text-gray-700 dark:text-white" onClick={() => setIsOpen(false)}>
@@ -243,7 +109,7 @@ export default function HamburgerIcon() {
           {categories.map((category, index) => (
             <li
               key={index}
-              className="flex items-center text-gray-800 justify-between p-3 dark:hover:text-[#00FF9C] hover:text-red-900 cursor-pointer rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-all"
+              className="flex items-center dark:text-white text-gray-800 justify-between p-3 dark:hover:text-[#00FF9C] hover:text-red-900 cursor-pointer rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-all"
               onClick={() => {
                 navigate(`/products?category=${category.value}`);
                 setIsOpen(false); // Close menu on category click
