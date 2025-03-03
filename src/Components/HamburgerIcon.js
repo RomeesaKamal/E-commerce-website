@@ -43,9 +43,12 @@ export default function HamburgerIcon() {
     <nav className="dark:bg-gray-900 bg-slate-200 shadow-2xl text-white relative">
       <div className="flex justify-between md:p-0 p-4 items-center max-w-6xl mx-auto">
         {/* ✅ Logo (Always Visible) */}
-        <h4 className="text-3xl font-mono text-slate-900 font-extrabold flex md:hidden">
-          <ShoppingBasket size={32} className="mr-3 dark:text-[#FB9237] text-red-900" />
-          Eazy<span className="dark:text-orange-400 text-red-900" >Buy</span>
+        <h4 className="text-3xl font-mono dark:text-white text-slate-900 font-extrabold flex md:hidden">
+          <ShoppingBasket
+            size={32}
+            className="mr-3 dark:text-[#FB9237] text-red-900"
+          />
+          Eazy<span className="dark:text-orange-400 text-red-900">Buy</span>
         </h4>
 
         {/* ✅ Hamburger Button (Changes to Close Icon) */}
@@ -74,12 +77,18 @@ export default function HamburgerIcon() {
         {/* ✅ Close Button inside Menu */}
         <div className="flex justify-between items-center">
           {/* ✅ Logo inside Menu */}
-          <h4 className="text-2xl font-mono font-extrabold flex">
-            <ShoppingBasket size={28} className="mr-2 dark:text-[#FB9237] text-red-900" />
-            <span className=" text-slate-900 dark:text-white"></span>Eazy<span className="dark:text-orange-400 text-red-900">Buy</span>
+          <h4 className="text-2xl font-mono font-extrabold flex text-slate-900 dark:text-white">
+            <ShoppingBasket
+              size={28}
+              className="mr-2 dark:text-[#FB9237] text-red-900"
+            />
+            Eazy<span className="dark:text-orange-400 text-red-900">Buy</span>
           </h4>
 
-          <button className="text-gray-700 dark:text-white" onClick={() => setIsOpen(false)}>
+          <button
+            className="text-gray-700 dark:text-white"
+            onClick={() => setIsOpen(false)}
+          >
             <X size={32} />
           </button>
         </div>
