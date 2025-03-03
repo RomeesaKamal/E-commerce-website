@@ -22,9 +22,9 @@ export default function App() {
 function AppContent() {
   const location = useLocation();
   const isHomePage = location.pathname === "/";
-  useEffect(() => {
-    document.documentElement.classList.add("dark");
-  }, []);
+  // useEffect(() => {
+  //   document.documentElement.classList.add("dark");
+  // }, []);
   return (
     <>
       {/* ✅ Show HamburgerIcon ONLY on the Homepage */}
